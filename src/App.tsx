@@ -72,7 +72,7 @@ export const App = () => {
     if (!selectedTickets.length) {
       return;
     }
-    window.gtag("event", "and_jackpot_july_engage_var3");
+    window.gtag("event", "and_jackpot_july_engage_var4");
     setLoading(true);
     sendDataToGA({
       engage_price: selectedTickets.length * TICKET_PRICE,
@@ -248,7 +248,7 @@ export const App = () => {
             block
             view="secondary"
             onClick={() => {
-              window.gtag("event", "and_jackpot_july_combination_var3");
+              window.gtag("event", "and_jackpot_july_combination_var4");
 
               setTickets((prev) =>
                 prev.map((ticket, index) => {
@@ -333,7 +333,7 @@ export const App = () => {
           block
           view="primary"
           onClick={() => {
-            window.gtag("event", "and_jackpot_july_luck_var3");
+            window.gtag("event", "and_jackpot_july_luck_var4");
             setStep("numbers");
           }}
         >
